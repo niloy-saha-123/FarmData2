@@ -10,10 +10,10 @@ module.exports = {
     'plugin:json/recommended',
     'plugin:prettier/recommended',
   ],
-  //rule: {
-  //  'vue/v-bind-style': ['error', 'longform'],
-  //  'vue/v-on-style': ['error', 'longform'],
-  //},
+  rules: {
+    'vue/v-bind-style': ['error', 'longform'],
+    'vue/v-on-style': ['error', 'longform'],
+  },
   overrides: [
     {
       files: ['**/*.comp.cy.js', '**/*.unit.cy.js', '**/*.e2e.cy.js'],
