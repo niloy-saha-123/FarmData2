@@ -10,11 +10,14 @@ module.exports = {
     'plugin:json/recommended',
     'plugin:prettier/recommended',
   ],
-  rules: {
-    'vue/v-bind-style': ['error', 'longform'],
-    'vue/v-on-style': ['error', 'longform'],
-  },
   overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        'vue/v-bind-style': ['error', 'longform'],
+        'vue/v-on-style': ['error', 'longform'],
+      },
+    },
     {
       files: ['**/*.comp.cy.js', '**/*.unit.cy.js', '**/*.e2e.cy.js'],
       extends: ['plugin:cypress/recommended'],
